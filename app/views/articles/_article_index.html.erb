@@ -1,0 +1,22 @@
+<% for article in @articles %>
+<div class="article-show">
+	<div class="title-head">
+		<h1><%= link_to article.title, article %></h1>
+	</div>
+	<div class="comment-count">
+	<span><%=article.comments.count if article.comments%></span>
+	</div>
+	<div class="time-class">
+		<span>Published at </span> :
+		<lable>
+			<%= article.published_at.strftime("%B, %d - %Y") %>
+		</lable>
+	</div>
+
+	<div class="article-summary">
+		<p>
+			<%= article.summary %>
+		</p>
+	</div>
+</div>
+<% end %>

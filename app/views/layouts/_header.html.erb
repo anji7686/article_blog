@@ -1,0 +1,21 @@
+<div id="header">
+					<div class="headder-left">
+						<%= link_to (image_tag "logo.png"), root_path %>
+					</div>
+					<div class="headder-right">
+						<% if logged_in? %>
+						<%= link_to "Logout", logout_path %>
+						<%= link_to "Edit Password", edit_user_path(current_user) %>
+						<%= link_to "New Article", new_article_path %>
+						<% else %>
+						<%= link_to "Login", login_path %>
+						<%= link_to "Register", {}, {:href=>"users/new"} %>
+						<% end %>
+					</div>
+					<div class="headder-menu">
+						<%= link_to 'Home', "/" %>
+						<%= link_to 'New Wall', new_article_path %>
+						
+					</div>
+
+</div>

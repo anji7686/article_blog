@@ -1,0 +1,32 @@
+<%#= div_for article do %>
+<div class="article-show">
+	<div class="title-head">
+		<h1><%= article.title %></h1>
+	</div>
+	<div class="time-class">
+		<span>Published at </span> :
+		<lable>
+			<%= article.published_at.strftime("%d-%m-%Y") %>
+		</lable>
+	</div>
+	<div class="comment-count">
+		<span><%= article.comments.count if article.comments %></span>
+	</div>
+	<div class="article-summary">
+		<p>
+			<%= article.summary %>
+		</p>
+	</div>
+	<div class="article-content">
+		<p>
+			<%= article.body %>
+		</p>
+	</div>
+	<% if article.owned_by? current_user %>
+	<div class="actions">
+		<span><%= link_to "Edit", edit_article_path(article) %></span>
+		<span><%= link_to "Delete", article, :confirm => "Are you sure?", :method => :delete %></span>
+	</div>
+	<%end%>
+</div>
+<% # end %>

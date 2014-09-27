@@ -1,0 +1,482 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {font-size: 13px;line-height: 21px;color: #666;}
+#header h1 a {
+	font-family: "Myriad Web Pro", Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	border-bottom: 42px;
+	color: #003C7F;
+	padding: 15px 0;
+	height: 35px;
+}
+
+#footer {
+	border-top: 5px solid #C1C1C1;
+	margin-top: 10px;
+	clear: both;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 11px;
+}
+
+#header h1 {
+	padding-top: 14px;
+	float: left;
+	font-size: 30px;
+}
+#header h1 a:hover {
+	background-color: white;
+	color: black;
+	border-bottom: 4px solid #ccc;
+}
+
+#header p {
+	float: right;
+}
+p, ol, ul, td {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+pre {
+	background-color: #eee;
+	padding: 10px;
+	font-size: 11px;
+}
+
+div {&.field, &.actions {
+	margin-bottom: 10px;
+}
+}
+
+#notice {
+	color: green;
+}
+
+.field_with_errors {padding: 2px;background-color: red;	display: table;}
+
+#error_explanation {width: 450px;
+	border: 2px solid red;	padding: 7px;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	margin: -7px;
+	margin-bottom: 0px;
+	background-color: #c00;
+	color: #fff;
+}
+ul li {
+	font-size: 12px;
+	list-style: square;
+}
+}
+
+.article-title {
+	color: #0D3D92;
+	font-family: arial;
+	font-size: 11px;
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+.container {
+	background-color: #F0F2F2;
+	float: left;
+	margin-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 36px;
+	padding-right: 36px;
+	padding-top: 0;
+	width: 915px;
+}
+
+.container-left {	float: right;width: 81%;}
+.container-right {	float: left;width: 148px;}
+.right-side {	float: left;width: 100%;}
+.right-side a {	color: #59B89B;
+	float: left;font-size: 15px;font-weight: bold;	padding-top: 6px;	width: 100%;}
+.article-show {	float: left;padding-bottom: 5px;width: 100%;}
+.comment-block {float: left;position: inherit;width: 81%;}
+.comments-head {float: left;width: 56%;}
+.comments-head  h1 {color: #B22222;font-size: 16px;}
+.comment-old {float: none;width: 58%;}
+.title-head {float: left;width: 75%;}
+.login-head {float: left;width: 81%;}
+.login-head h1 {color: #0E3E92;	padding-left: 10px;}
+.login-form {float: left;width: 100%;}
+.field {float: left;padding-bottom: 14px;	padding-left: 10px;	padding-right: 10px;padding-top: 0;	width: 60%;}
+.field-text {
+	color: #505050;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 9px;
+	width: 183px;
+}
+.field-input {
+	float: left;
+	width: 50%;
+}
+.field-text label {
+	color: #505050;
+	float: left;
+	font-family: "arial";
+	font-size: 16px;
+}
+.field-input input {
+	border: 1px solid #B4B4B4;
+	border-radius: 4px 4px 4px 4px;
+	color: #505050;
+	float: left;
+	font-size: 14px;
+	height: 23px;
+	outline: medium none;
+	padding: 5px;
+	width: 244px;
+}
+.field-input textarea {
+	border: 1px solid #B4B4B4;
+	border-radius: 6px 6px 6px 6px;
+	color: #505050;
+	float: left;
+	font-size: 14px;
+	height: 80px;
+	outline: medium none;
+	padding: 5px;
+	width: 244px;
+}
+.error-message lable {
+	float: left;
+	text-align: center;
+	width: 100%;
+	color: #FF0000;
+}
+.center-button {
+	float: left;
+	padding-bottom: 10px;
+	padding-left: 241px;
+	padding-top: 10px;
+	width: 66%;
+}
+.center-button input {
+	float: left;
+	font-size: 16px;
+	font-family: "GeoSlab703 Md BT";
+	color: #fff;
+	border: none;
+	padding: 0px 7px 0px;
+	height: 29px;
+	background: url("big_midl.png") repeat-x scroll 0 0 transparent;
+	font-style: normal;
+}
+.center-button a {
+	border: none;
+	float: left;
+	font-size: 16px;
+	font-family: "GeoSlab703 Md BT";
+	color: #fff;
+	padding: 5px 7px 4px;
+	height: 29px;
+	background: url("back_buttn_centr.png") repeat-x scroll 0 0 transparent;
+	font-style: normal;
+}
+#wrapper {
+	background-color: #F0F2F2;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-top: 20px;
+	width: 1004px;
+}
+#wrapper_header {
+	border-bottom: 5px solid #C1C1C1;
+	margin-top: 0;
+	clear: both;
+	padding-bottom: 129px;
+	font-size: 11px;
+}
+#wrapper .row {
+	width: 986px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 25px;
+	max-width: 98%;
+	background-color: #F0F2F2;
+}
+.wrapper-header {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.headder-left {
+	float: left;
+	width: 50%
+}
+.headder-left a img {
+	float: left;
+}
+.headder-right a {
+	color: #003C7F;
+	float: right;
+	font-size: 15px;
+	padding: 5px;
+}
+.headder-right {
+	float: right;
+}
+.headding {
+	color: #853A40;
+	float: left;
+	font-family: Arial;
+	font-size: 17px;
+	font-weight: bold;
+	width: 100%;
+}
+.new-article a {
+	color: #19487C;
+	font-size: 14px;
+	padding-right: 72px;
+	float: right;
+}
+.title-head h1 a {
+	color: #59B89B;
+	font-size: 14px;
+	font-weight: bold;
+}
+.title-head h1 {
+	color: #0E3E92;
+	font-size: 14px;
+}
+.title-head h1 a:hover {
+	color: #003C7F;
+}
+.new-article a:hover {
+	color: #E9001B;
+}
+.article-summary {
+	width: 96%;
+	float: left;
+}
+.title-head ul a {
+	color: #E9001B;
+	float: right;
+	padding-right: 57px;
+}
+.time-class span {
+	font-size: 12px;
+	font-style: italic;
+}
+.time-class lable{
+	color: #0077CC;
+	font-size: 12px;
+}
+#main h1 {
+	font-size: 16px;
+	padding: 10px 0;
+	border-bottom: 1px solid #bbb;
+	margin-bottom: 10px;
+}
+
+#main table {
+	margin: 0;
+}
+
+#main form {
+	text-align: left;
+}
+
+#main form br {
+	display: none;
+	float: left;
+}
+
+#main form label {
+	width: 150px;
+	display: block;
+	text-align: right;
+	padding-right: 10px;
+	float: left;
+	line-height: 21px;
+	vertical-align: center;
+	background-color: #F0F0F0;
+	border: 2px solid #ccc;
+	margin-right: 10px;
+}
+
+#main form label.check_box_label {
+	width: auto;
+	display: inline;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 21px;
+	vertical-align: center;
+	background-color: #FFF;
+	border: none;
+}
+
+#articles form .field, #articles span .actions a {
+	padding-top: 10px;
+	clear: both;
+}
+
+#main form input[type=text], #main form input[type=password], #main form textarea {
+	float: left;
+	font-size: 14px;
+	width: 250px;
+	padding: 2px;
+	border: 2px solid #ccc;
+}
+
+#main form input[type=checkbox] {
+	margin: 4px;
+	float: left;
+}
+
+#main form textarea {
+	height: 150px;
+}
+
+#main form input[type=submit] {
+	margin-left: 175px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#main h3 {
+	padding-top: 10px;
+	height: 20px;
+}
+
+#main h3 .actions {
+	display: none;
+	font-weight: normal;
+	font-size: 10px;
+}
+
+#main h3:hover .actions {
+	display: inline;
+}
+
+.fieldWithErrors {
+	display: table;
+	float: left;
+	margin: 0;
+	width: 100px;
+	margin-right: 10px;
+}
+
+#main form .fieldWithErrors label {
+	border: 2px solid red;
+	margin-right: 0px;
+}
+
+#main form .fieldWithErrors input, #main form .fieldWithErrors textarea {
+	width: 250px;
+	border: 2px solid red;
+}
+
+#errorExplanation {
+	width: 413px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+	margin: 0;
+}
+
+#errorExplanation h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	margin: -7px;
+	background-color: #c00;
+	color: #fff;
+}
+
+#errorExplanation p {
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+	margin: 0;
+}
+
+#errorExplanation ul li {
+	font-size: 12px;
+	list-style: square;}
+.notice {color: green;}
+.alert {color: red;}
+.left-side {float: left;	width: 66%;}
+.time-class {float: right;width: 40%;}
+.article-content {float: left;width: 98%;}
+.actions {float: right;width: 44%;}
+.actions span {}
+
+.comment-count span {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 14px;
+    padding-top: 0px;
+    background-image: url("img1.png");
+    width: 30px;
+}
+
+.comment-count {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: padding-box;
+    background-position: 2px 0;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    float: left;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    top: 12px;
+    width: 36px;
+}
+.comments-user {
+    float: left;
+    width: 86.1%;
+}
+.comments-user img {
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 9px;
+    margin-top: 5px;
+    width: 20%;
+}
+.comments-user lable {
+    color: #FF6347;
+    float: left;
+    font-size: 15px;
+    font-style: normal;
+    padding-left: 69px;
+    width: 100%;
+}
+.register-form{	float: left;width: 100%}
+.headder-menu {float: left;width: 100%;}

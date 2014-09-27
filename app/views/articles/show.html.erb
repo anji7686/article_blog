@@ -1,0 +1,24 @@
+<div class="left-side">
+	<%= render @article %>
+	<%#= render :partial=>"articles/article_index" %>
+	<% if logged_in? %>
+	<%= link_to 'Email a friend', '#', :onclick => "$('#notify_friend_form').slideDown()" %>
+	<%= render 'notify_friend' %>
+		<%end%>
+	<%if !@article.comments.blank?%>
+	<div class="comment-block">
+		<div class="comments-head ">
+			<h1>Comments : </h1>
+		</div>
+		<div class="comment-old">
+			<%= render @article.comments %>
+		</div>
+	</div>
+	<%end%>
+	<% if logged_in? %>
+	<%= link_to 'New Comment', '#', :onclick => "$('#comment_form').slideDown()" %>
+	<%= render :partial => 'comments/new' %>
+	<%end%>
+<%#= link_to 'new comment', 'comments/new', :onclick => "$('#new_comment_link').slideDown()" %>
+<%#= link_to "new comment", new_article_comment_path(@article, :format => :js), :remote => true, :id => 'new_comment_link' %>
+</div>

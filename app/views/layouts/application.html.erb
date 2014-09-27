@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Article Blog</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="wrapper_header">
+				<%= render :partial=>"layouts/header" %>
+			</div>
+			<div class="row">
+				<div class="container">
+					<div class="error-message">
+
+						<%= content_tag :span, notice, :class => 'notice' if notice.present? %>
+						<%= content_tag :lable, alert, :class => 'alert' if alert.present? %>
+					</div>
+					<div class="container-right">
+						<div class="right-side">
+							<a href="/">Home</a>
+							<%= link_to 'New Wall', new_article_path %>
+						</div>
+					</div>
+					<div class="container-left">
+						<%= yield %>
+					</div>
+
+				</div>
+			</div>
+			<div id="footer">
+				A Blog Article's  by <a href="/">Friends Share</a>
+			</div>
+		</div>
+	</body>
+</html>
