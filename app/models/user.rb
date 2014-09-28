@@ -1,5 +1,3 @@
-#require 'digest'
-
 class User < ActiveRecord::Base
   attr_accessor :password,:password_confirmation,:first_name, :last_name, :avatar, :location, :mobile
   require "email_format_validator"
