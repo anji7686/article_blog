@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140928025854) do
+ActiveRecord::Schema.define(version: 20141004113201) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
@@ -28,6 +28,30 @@ ActiveRecord::Schema.define(version: 20140928025854) do
     t.string   "name"
     t.string   "email"
     t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "images", force: true do |t|
+    t.integer  "root_image_id"
+    t.boolean  "has_roi",            default: false
+    t.integer  "roi_x"
+    t.integer  "roi_y"
+    t.integer  "roi_w"
+    t.integer  "roi_h"
+    t.string   "crop_mode"
+    t.string   "fill_color"
+    t.integer  "used_by_id"
+    t.string   "used_by_type"
+    t.string   "purpose"
+    t.integer  "site_id"
+    t.integer  "version",            default: 0
+    t.string   "title"
+    t.string   "alt_text"
+    t.string   "display_preference"
+    t.boolean  "status"
+    t.integer  "created_by"
+    t.integer  "updated_by"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
